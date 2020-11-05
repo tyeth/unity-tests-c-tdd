@@ -29,4 +29,6 @@ SECTIONS
   } > FLASH
 } INSERT AFTER .text
 
-INCLUDE "nrf5x_common.ld"
+/* INCLUDE "gcc_nrf51_common.ld" */
+INCLUDE "/home/eren/basefolder/modules/nrfx/mdk/nrf52_common.ld"
+/* INCLUDE "nrf5x_common.ld" */

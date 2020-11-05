@@ -158,7 +158,8 @@ void app_error_fault_handler(uint32_t id, uint32_t pc, uint32_t info)
     printf("app_error fault - id 0x%08X, code: 0x%08X\r\n"
            "%s:%u\r\n",
         (unsigned int)id, (unsigned int)(p_error_info->err_code),
-        (char const *)p_error_info->p_file_name, p_error_info->line_num);
+        (char const *)p_error_info->p_file_name, (unsigned int)p_error_info->line_num);
+
     Unity.TestFile = (char const *)p_error_info->p_file_name;
     UNITY_TEST_FAIL(p_error_info->line_num, "app_error fault");
 }
