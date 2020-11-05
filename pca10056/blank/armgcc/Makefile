@@ -10,6 +10,8 @@ $(OUTPUT_DIRECTORY)/nrf52840_xxaa.out: \
 
 # Source files common to all targetss
 SRC_FILES += \
+  /home/eren/basefolder/modules/nrfx/mdk/system_nrf52840.c \
+  /home/eren/basefolder/modules/nrfx/mdk/gcc_startup_nrf52840.S \
   $(SDK_ROOT)/components/libraries/fifo/app_fifo.c \
   $(SDK_ROOT)/components/boards/boards.c \
   $(SDK_ROOT)/components/libraries/log/src/nrf_log_backend_serial.c \
